@@ -10,7 +10,7 @@ include '../../config/koneksi.php';
 $query = mysqli_query($conn,"INSERT INTO barang
 VALUES('$id_barang','$nama_barang','$harga_barang','$stok_barang','$id_jenis')");
 if($squery){
-    echo "<script>alert('tambah berhasil')</script>";
+    echo "<script>alert('tambah gagal')</script>";
     echo "<script>window.location.href='index.php'</script>";
 }else{
     echo "<script>alert('tambah berhasil')</script>";

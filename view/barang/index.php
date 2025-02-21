@@ -73,7 +73,10 @@
             <td><?php echo $result['id_jenis'] ?></td>
             <td>
                 <a href="" class="btn btn-warning">Edit </a>
-                <a href=""class="btn btn-danger">Hapus</a>
+
+                <a href="hapus.php?id_barang=<?php echo $result['id_barang']?>"
+                onclick="return confirm('kamu yakin mau hapus ?')"
+                class="btn btn-danger"> <i class="fa-solid fa-pen-to-square"> </i>hapus </a>
             </td>
         </tr>
     <?php

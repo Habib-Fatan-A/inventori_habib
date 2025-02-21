@@ -66,8 +66,8 @@
             <td><?php echo $result['id_jenis'] ?></td>
             <td><?php echo $result['nama_jenis'] ?></td>
             <td>
-                <a href="" class="btn btn-warning">Edit |</a>
-                <a href="" class="btn btn-danger">Hapus|</a>
+                <a href="view_edit.php?id_jenis=<?php echo $result['id_jenis'] ?>" class="btn btn-warning">Edit |</a>
+                
             </td>
         </tr>
     <?php
